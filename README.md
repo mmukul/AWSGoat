@@ -6,6 +6,13 @@ Compromising an organization's cloud infrastructure is like sitting on a gold mi
 
 AWSGoat is a vulnerable by design infrastructure on AWS featuring the latest released OWASP Top 10 web application security risks (2021) and other misconfiguration based on services such as IAM, S3, API Gateway, Lambda, EC2, and ECS. AWSGoat mimics real-world infrastructure but with added vulnerabilities. It features multiple escalation paths and is focused on a black-box approach.
 
+AWSGoat uses IaC (Terraform) to deploy the vulnerable cloud infrastructure on the user's AWS account. This gives the user complete control over code, infrastructure, and environment. Using AWSGoat, the user can learn/practice:
+- Cloud Pentesting/Red-teaming
+- Auditing IaC
+- Secure Coding
+- Detection and mitigation
+
+
 The project will be divided into modules and each module will be a separate web application, powered by varied tech stacks and development practices. It will leverage IaC through terraform and GitHub actions to ease the deployment process.
 
 **Presented at**
@@ -14,6 +21,7 @@ The project will be divided into modules and each module will be a separate web 
 - [BlackHat USA 2022](https://www.blackhat.com/us-22/arsenal/schedule/index.html#awsgoat--a-damn-vulnerable-aws-infrastructure-27999)
 - [DC 30: Demo Labs](https://forum.defcon.org/node/242059)
 - [Rootcon 16](https://rootcon.org/)
+- [BlackHat ASIA 2023](https://www.blackhat.com/asia-23/arsenal/schedule/#awsgoat--a-damn-vulnerable-aws-infrastructure-31311)
 
 ### Developed with :heart: by [INE](https://ine.com/) 
 
@@ -35,7 +43,7 @@ Currently, the project  contains the following vulnerabilities/misconfigurations
 
 * XSS
 * SQL Injection
-* Insecure Direct Object reference
+* Insecure Direct Object Reference
 * Server Side Request Forgery on Lambda Environment
 * Sensitive Data Exposure and Password Reset
 * S3 Misconfigurations
@@ -149,13 +157,13 @@ Sanjeev Mahunta, Software Engineer (Cloud), INE <smahunta@ine.com>
 
 Shantanu Kale, Cloud Developer, INE  <skale@ine.com>
 
-Govind Krishna Lal Balaji, Cloud Developer Intern, INE <lkris@ine.com> 
+Govind Krishna Lal Balaji, Cloud Developer, INE <lkris@ine.com> 
 
-Litesh Ghute, Software Engineer (Cloud) Intern, INE <lghute@ine.com> 
+Litesh Ghute, Software Engineer, INE <lghute@ine.com> 
 
 # Solutions
 
-The manuals are available in the [solutions](solutions/) directory 
+The offensive manuals are available in the [attack-manuals](attack-manuals/) directory, and the defensive manuals are available in the [defence-manuals](defence-manuals/) directory. 
 
 Module 1 Exploitation Videos: <https://www.youtube.com/playlist?list=PLcIpBb4raSZEMosUmY8KpxPWtjKRMSmNx>
 
@@ -215,7 +223,7 @@ You should have received a copy of the MIT License along with this program. If n
 # Sister Projects
 
 - [AzureGoat](https://github.com/ine-labs/AzureGoat)
-- GCPGoat (Coming Soon)
+- [GCPGoat](https://github.com/ine-labs/GCPGoat)
 - [PA Toolkit (Pentester Academy Wireshark Toolkit)](https://github.com/pentesteracademy/patoolkit)
 - [ReconPal: Leveraging NLP for Infosec](https://github.com/pentesteracademy/reconpal) 
 - [VoIPShark: Open Source VoIP Analysis Platform](https://github.com/pentesteracademy/voipshark)
